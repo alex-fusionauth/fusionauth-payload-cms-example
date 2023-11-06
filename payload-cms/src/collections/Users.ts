@@ -12,8 +12,8 @@ const Users: CollectionConfig = {
         return new OAuth2Strategy({
           authorizationURL: 'http://localhost:9011/oauth2/authorize',
           tokenURL: 'http://localhost:9011/oauth2/token',
-          clientID: '123-456-789',
-          clientSecret: 'shhh-its-a-secret',
+          clientID: 'e9fdb985-9173-4e01-9d73-ac2d60d1dc8e',
+          clientSecret: 'super-secret-secret-that-should-be-regenerated-for-production',
           callbackURL: 'http:localhost:3000/auth/provider/callback',
         },
         function(accessToken, refreshToken, profile, done) {
